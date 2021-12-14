@@ -26,9 +26,9 @@ public class InsertionSorting {
 
         for (int i=1; i<array.length; i++){
 
-            int temp = array[i]; //sice loops starts with one 2nd value of 1st iteration will be passed in temp variable
+            int temp = array[i]; //since loops starts with one 2nd value of 1st iteration will be passed in temp variable
 
-            int j = i-1;    //then we minus a i so that we shift previos indexes to right if they are greater
+            int j = i-1;    //then we minus  i so that we shift previos indexes to right if they are greater
 
             while (j>=0 && array[j] > temp){ //set the conditon that if the previous[index] are greater
 
