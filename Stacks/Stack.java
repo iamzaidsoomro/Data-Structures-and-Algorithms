@@ -4,6 +4,7 @@
     the first item is removed. The best real life example for this is the stack of books, 
     stake of plates etc.
 */
+package Stacks;
 
 class Stack {
     /*
@@ -34,7 +35,10 @@ class Stack {
      * this will allow programmer to limit the size of items in a single stack
      */
     public Stack(int qty) {
-        this.qty = qty;
+        if (qty < 0)
+            System.out.println("Limit should be a postive integer");
+        else
+            this.qty = qty;
     }
 
     /*

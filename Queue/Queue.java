@@ -9,6 +9,8 @@
     Two are instance variables of Node class and other two are limit (for storing max capacity) and 
     count (for storing current number of items)
  */
+package Queue;
+
 class Queue {
     private class Node {
         private int data;
@@ -35,7 +37,10 @@ class Queue {
      * Constructor to set limit of Queue to make it static
      */
     public Queue(int limit) {
-        this.limit = limit;
+        if (limit < 0)
+            System.out.println("Limit should be a postive integer");
+        else
+            this.limit = limit;
     }
 
     /*
