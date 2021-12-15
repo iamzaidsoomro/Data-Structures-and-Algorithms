@@ -34,7 +34,7 @@ class Queue {
     }
 
     /*
-     * Constructor to set limit of Queue to make it static
+     * Constructor for setting limit of Queue to make it static
      */
     public Queue(int limit) {
         if (limit < 0)
