@@ -18,6 +18,7 @@ class CircularLinkedList {
         }
     }
 
+    private Node head, tail;
     private int length, limit;
 
     public CircularLinkedList() {
@@ -29,6 +30,9 @@ class CircularLinkedList {
         if (limit >= 0) {
             this.limit = limit;
             this.length = 0;
+        } else {
+            System.out.println("WARNING! Limit can't be negative");
         }
     }
+
 }

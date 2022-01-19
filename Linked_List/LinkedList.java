@@ -136,6 +136,19 @@ class LinkedList {
         return -1;
     }
 
+    // find largest() method to find the largest element in the linked list
+    public int findHighest() {
+        int highest = 0;
+        var temp = head;
+        for (int i = 0; i < count; i++) {
+            if (temp.data >= highest) {
+                highest = temp.data;
+            }
+            temp = temp.next;
+        }
+        return highest;
+    }
+
     // getCount() method returns the number of elements in the list
     public int getCount() {
         return count;
