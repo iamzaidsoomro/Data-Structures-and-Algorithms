@@ -2,7 +2,10 @@ package Linked_List;
 
 public class app {
     public static void main(String args[]) {
-
+        var l = new CircularLinkedList();
+        l.addLast(3);
+        l.addLast(1);
+        l.addLast(8);
     }
 }
 
@@ -11,7 +14,6 @@ class CircularLinkedList {
     private class Node {
         private int data;
         private Node next;
-        private int index;
 
         Node(int data) {
             this.data = data;
@@ -35,4 +37,25 @@ class CircularLinkedList {
         }
     }
 
+    public void addLast(int data) {
+        var temp = new Node(data);
+        if (isEmpty()) {
+            head = tail = temp;
+            length++;
+        } else if (isFull()) {
+            System.out.println("List is full");
+        } else {
+            tail.next = temp;
+            tail = temp;
+            tail.next = head;
+        }
+    }
+
+    public boolean isFull() {
+        return limit == length;
+    }
+
+    public boolean isEmpty() {
+        return head == null && tail == null;
+    }
 }
