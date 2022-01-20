@@ -9,6 +9,9 @@ public class app {
         l.addLast(4);
         l.addLast(2);
         l.print();
+        l.removeFirst();
+        System.out.println();
+        l.print();
     }
 }
 
@@ -83,6 +86,16 @@ class CircularLinkedList {
             temp.next = head;
             head = temp;
             length++;
+        }
+    }
+
+    public void removeFirst() {
+        if (isEmpty())
+            System.out.println("The list is empty");
+        else {
+            head = head.next;
+            tail.next = head;
+            length--;
         }
     }
 
