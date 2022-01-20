@@ -2,16 +2,7 @@ package Linked_List;
 
 public class app {
     public static void main(String args[]) {
-        var l = new CircularLinkedList();
-        l.addLast(3);
-        l.addLast(1);
-        l.addLast(8);
-        l.addLast(4);
-        l.addLast(2);
-        l.print();
-        l.removeFirst();
-        System.out.println();
-        l.print();
+
     }
 }
 

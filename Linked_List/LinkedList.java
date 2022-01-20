@@ -149,6 +149,12 @@ class LinkedList {
         return highest;
     }
 
+    // link to another linkedlist
+    public void linkTo(LinkedList l) {
+        this.tail.next = l.head;
+        this.count += l.count;
+    }
+
     // getCount() method returns the number of elements in the list
     public int getCount() {
         return count;
