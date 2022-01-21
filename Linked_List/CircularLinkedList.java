@@ -1,11 +1,5 @@
 package Linked_List;
 
-public class app {
-    public static void main(String args[]) {
-
-    }
-}
-
 class CircularLinkedList {
 
     private class Node {
@@ -96,6 +90,13 @@ class CircularLinkedList {
             System.out.println(temp.data);
             temp = temp.next;
         }
+    }
+
+    public void linkTo(CircularLinkedList l) {
+        this.tail.next = l.head;
+        l.tail.next = this.head;
+        this.tail = l.tail;
+        this.length += l.length;
     }
 
     public boolean isFull() {
