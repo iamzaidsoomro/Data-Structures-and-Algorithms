@@ -49,7 +49,7 @@ class Stack {
      * head: for storing top element of a stack
      * tail: for storing the bottom element of a stack
      */
-    private int qty;
+    private int qty = -1;
     private int count = 0;
     private Node head;
     private Node tail;
