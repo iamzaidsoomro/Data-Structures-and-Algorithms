@@ -12,6 +12,13 @@ class Stack {
      * The class contains two fields, data for holding integer value, and Node
      * variable for storing address to next node.
      */
+    public static void main(String[] args) {
+        var obj = new Stack();
+        obj.push(5);
+        obj.push(3);
+        obj.push(7);
+    }
+
     private class Node {
         private int data;
         private Node next;
